@@ -6,11 +6,11 @@ This is an Android browser application being developed with Kotlin and Jetpack C
 * Address bar for entering URLs
 * Tab management (planned)
 * Settings for customization (planned)
-* ... (add more features as you implement them)
+* ... (add more features as we implement them)
 
 ## Development
 
-This project is currently under development. Contributions are welcome!
+This project is currently under development. Contributions are welcome at the permission of the Owner/CEO!  Contact at daedaevibin@naver.com or in the discord server
 
 ## Build Instructions
 
