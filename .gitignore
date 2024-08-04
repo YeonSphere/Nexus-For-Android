@@ -1,15 +1,43 @@
+# Android Studio
 *.iml
 .gradle
 /local.properties
-/.idea/caches
-/.idea/libraries
-/.idea/modules.xml
 /.idea/workspace.xml
-/.idea/navEditor.xml
-/.idea/assetWizardSettings.xml
+/.idea/libraries
 .DS_Store
 /build
 /captures
 .externalNativeBuild
-.cxx
-local.properties
+
+# Use this to prevent local configuration files from being checked in.
+#local.properties
+
+# Ignore temporary files.
+*.tmp
+*.temp
+
+# Compiled class file
+*.class
+
+# Log file
+*.log
+
+# Package Files #
+*.apk
+*.ap_
+*.aab
+
+# Crashes
+*.hprof
+
+# Ignore Gradle GUI config
+gradle-app.setting
+
+# Avoid ignoring Gradle wrapper jar file (.jar files are usually ignored)
+!gradle-wrapper.jar
+
+# Cache of project.
+.gradletasknamecache
+
+# # Workaround for https://youtrack.jetbrains.com/issue/IDEA-118598
+# gradle/wrapper/gradle-wrapper.properties
