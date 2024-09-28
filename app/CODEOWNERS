@@ -1,1 +1,17 @@
+# This file defines code ownership for the Nexus-For-Android app
+
+# Default owner for all files
 * @YeonSphere
+
+# Specific ownership for key areas
+/app/src/main/java/com/yeonsphere/nexus/ @YeonSphere
+/app/src/main/res/ @YeonSphere
+/app/build.gradle.kts @YeonSphere
+
+# Test files
+/app/src/test/ @YeonSphere
+/app/src/androidTest/ @YeonSphere
+
+# Configuration files
+/app/src/main/AndroidManifest.xml @YeonSphere
+/app/src/main/res/xml/ @YeonSphere

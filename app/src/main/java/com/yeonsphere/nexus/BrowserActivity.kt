@@ -14,26 +14,44 @@ class BrowserActivity : AppCompatActivity() {
     private lateinit var webView: WebView
     private lateinit var tabManager: TabManager
     private lateinit var renderer: Renderer
+    private lateinit var addressBar: EditText
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_browser)
 
+        initializeViews()
+        setupTabManager()
+        setupRenderer()
+        setupAddressBar()
+    }
+
+    private fun initializeViews() {
         webView = findViewById(R.id.webview)
-        val addressBar: EditText = findViewById(R.id.address_bar)
+        addressBar = findViewById(R.id.address_bar)
+    }
 
+    private fun setupTabManager() {
         tabManager = TabManager()
-        renderer = Renderer(webView)
+    }
 
+    private fun setupRenderer() {
+        renderer = Renderer(webView)
+    }
+
+    private fun setupAddressBar() {
         addressBar.setOnEditorActionListener { _, actionId, _ ->
             if (actionId == EditorInfo.IME_ACTION_GO) {
-                val url = addressBar.text.toString()
-                renderer.loadUrl(url)
-                Log.d("BrowserActivity", "Loading URL: $url")
+                loadUrl(addressBar.text.toString())
                 true
             } else {
                 false
             }
         }
+    }
+
+    private fun loadUrl(url: String) {
+        renderer.loadUrl(url)
+        Log.d("BrowserActivity", "Loading URL: $url")
     }
 }

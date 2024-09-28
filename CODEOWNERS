@@ -1,2 +1,8 @@
-* @YeonSphere
-* @daedaevibin
+# Global owners
+* @YeonSphere @daedaevibin
+
+# Specific file/directory owners
+/app/ @YeonSphere
+/gradle/ @daedaevibin
+*.md @YeonSphere
+build.gradle.kts @daedaevibin

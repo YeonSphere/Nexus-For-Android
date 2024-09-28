@@ -16,8 +16,14 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+        maven { url = uri("https://jitpack.io") }
     }
 }
 
 rootProject.name = "Nexus"
 include(":app")
+include(":core")
+include(":feature:browser")
+include(":feature:settings")
+include(":feature:bookmarks")
+include(":feature:history")
