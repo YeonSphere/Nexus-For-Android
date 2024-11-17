@@ -6,7 +6,7 @@
 #   http://developer.android.com/guide/developing/tools/proguard.html
 
 # Keep all classes in the application
--keep class com.example.nexus.** { *; }
+-keep class com.yeonsphere.nexus.** { *; }
 
 # Keep all native methods
 -keepclasseswithmembernames class * {
@@ -60,7 +60,7 @@
 }
 
 # Keep the BuildConfig
--keep class com.example.nexus.BuildConfig { *; }
+-keep class com.yeonsphere.nexus.BuildConfig { *; }
 
 # Keep the support library
 -keep class android.support.v4.** { *; }
@@ -69,3 +69,57 @@
 # Keep the AndroidX library
 -keep class androidx.** { *; }
 -keep interface androidx.** { *; }
+
+# Flutter specific rules
+-keep class io.flutter.app.** { *; }
+-keep class io.flutter.plugin.** { *; }
+-keep class io.flutter.util.** { *; }
+-keep class io.flutter.view.** { *; }
+-keep class io.flutter.** { *; }
+-keep class io.flutter.plugins.** { *; }
+
+# Kotlin specific rules
+-keep class kotlin.** { *; }
+-keep class kotlin.Metadata { *; }
+-dontwarn kotlin.**
+-keepclassmembers class **$WhenMappings {
+    <fields>;
+}
+-keepclassmembers class kotlin.Metadata {
+    public <methods>;
+}
+
+# OkHttp specific rules
+-dontwarn okhttp3.**
+-dontwarn okio.**
+-dontwarn javax.annotation.**
+-keepnames class okhttp3.internal.publicsuffix.PublicSuffixDatabase
+
+# Retrofit specific rules
+-keepattributes Signature
+-keepattributes *Annotation*
+-keep class retrofit2.** { *; }
+-keepclasseswithmembers class * {
+    @retrofit2.http.* <methods>;
+}
+
+# Gson specific rules
+-keepattributes Signature
+-keepattributes *Annotation*
+-dontwarn sun.misc.**
+-keep class com.google.gson.** { *; }
+-keep class * implements com.google.gson.TypeAdapterFactory
+-keep class * implements com.google.gson.JsonSerializer
+-keep class * implements com.google.gson.JsonDeserializer
+
+# Enable R8 full mode
+-allowaccessmodification
+-repackageclasses
+-optimizations !code/simplification/arithmetic,!field/*,!class/merging/*
+
+# Remove debug logs in release
+-assumenosideeffects class android.util.Log {
+    public static *** d(...);
+    public static *** v(...);
+    public static *** i(...);
+}

@@ -1,5 +1,11 @@
 # Nexus Browser for Android
 
+[![CI](https://github.com/YeonSphere/Nexus-For-Android/actions/workflows/ci.yml/badge.svg)](https://github.com/YeonSphere/Nexus-For-Android/actions/workflows/ci.yml)
+[![API](https://img.shields.io/badge/API-23%2B-brightgreen.svg)](https://android-arsenal.com/api?level=23)
+[![License](https://img.shields.io/badge/License-YUOSL-purple)](LICENSE)
+[![Android](https://img.shields.io/badge/Platform-Android-green.svg)](https://www.android.com)
+[![Kotlin](https://img.shields.io/badge/Kotlin-1.9.22-blue.svg)](https://kotlinlang.org)
+
 This is an Android browser application developed with Kotlin and Jetpack Compose, focusing on privacy and user control.
 
 ## Features
