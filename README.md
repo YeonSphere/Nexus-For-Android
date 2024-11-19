@@ -45,8 +45,14 @@ Please read our [CONTRIBUTING.md](CONTRIBUTING.md) file for details on our code 
 
 ## License
 
-This project is licensed under the [YeonSphere Universal Open Source License (YUOSL)](LICENSE). Please read the license carefully before using or contributing to this project.
+This project is licensed under the YeonSphere Universal Open Source License (YUOSL). Key points:
+- Free for personal use
+- Commercial terms negotiable
+- 30-day response window for inquiries
+- Contact @daedaevibin for commercial licensing
+- See the [LICENSE](LICENSE) file for full details
 
 ## Contact
 
-For support, feature requests, or any queries, please open an issue on our GitHub repository or contact us through our official website (coming soon).
+- Primary Contact: Jeremy Matlock (@daedaevibin)
+- Email: daedaevibin@naver.com
